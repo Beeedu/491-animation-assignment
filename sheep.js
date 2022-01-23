@@ -19,9 +19,9 @@ class Sheep {
 
     loadAnimations() {
         this.animations[0] = new Animator(this.spritesheet, 0, 0, 64, 41, 7, 0.08);
-        this.animations[1] = new Animator(this.spritesheet, 0, 66, 64, 41, 7, 0.08);
-        this.animations[2] = new Animator(this.spritesheet, 0, 120, 64, 50, 7, 0.08);
-        this.animations[3] = new Animator(this.spritesheet, 0, 181, 64, 50, 7, 0.08);
+        this.animations[1] = new Animator(this.spritesheet, 0, 64, 64, 41, 7, 0.08);
+        this.animations[2] = new Animator(this.spritesheet, 0, 118, 64, 52, 7, 0.08);
+        this.animations[3] = new Animator(this.spritesheet, 0, 180, 64, 52, 7, 0.08);
     }
 
     update() {
