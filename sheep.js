@@ -2,19 +2,15 @@ class Sheep {
 
     constructor(game) {
         this.game = game;
-        this.spritesheet = ASSET_MANAGER.getAsset("./sprites/sheep_final.png");
+        this.spritesheet = ASSET_MANAGER.getAsset("./sprites/sheep.png");
 
         this.x = 475;
         this.y = 375;
         this.speed = 150;
         this.direction = 3;
 
-        this.animator = new Animator(ASSET_MANAGER.getAsset("./sprites/sheep.png"), 0, 0, 64, 40, 7, 0.08);
         this.animations = [];
         this.loadAnimations();
-
-        console.log(this.animator);
-        console.log(this.animations[0]);
     };
 
     loadAnimations() {

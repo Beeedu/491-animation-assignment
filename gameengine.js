@@ -37,7 +37,6 @@ class GameEngine {
     };
 
     startInput() {
-        console.log("start input")
         const getXandY = e => ({
             x: e.clientX - this.ctx.canvas.getBoundingClientRect().left,
             y: e.clientY - this.ctx.canvas.getBoundingClientRect().top

@@ -9,7 +9,6 @@ class Animator {
     drawFrame(tick, ctx, x, y, scale, flipX=false, flipY=false) {
         this.elapsedTime += tick;
         if (this.elapsedTime > this.totalTime) this.elapsedTime -= this.totalTime;
-        //const frame = this.reverse ? this.frameCount - this.currentFrame() - 1 : this.currentFrame();
         const frame = this.currentFrame();
 
         if (flipX) {
